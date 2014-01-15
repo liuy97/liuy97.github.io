@@ -1,71 +1,50 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<meta charset='utf-8' />
-<meta http-equiv="X-UA-Compatible" content="chrome=1" />
-<meta name="description" content="essay writer : " />
-<script src="javascripts/jquery-1.9.1.js"></script>
-<script src="javascripts/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" media="screen"
-	href="stylesheets/bootstrap.min.css">
-<title>Essay writer</title>
+<title>Chinese Pinyin Input</title>
+<meta name="description" content="Chinese Pinyin Input" />
+<meta name="keywords"
+	content="Chinese, Mandarin, pinyin, input, input method" />
+
+<meta name="http-equiv" content="Content-type: text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="stylesheets/base.css" />
+<link rel="stylesheet" type="text/css"
+	href="stylesheets/chineseinput.css" />
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript"
+	src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+
+<script type="text/javascript" src="javascripts/chineseinput-min.js"></script>
 </head>
-
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-collapse">
-					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">Essay writer</a>
+	<div class="wrapper">
+		<div id="container">
+			<nav id="main" class="constrain clearfix">
+				<div class="menu-top-container">
+					<ul id="menu-top" class="menu l_tinynav2">
+						<li class="menu-item"><a href="#">Home</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div id="content-wrapper" class="clearfix constrain ">
+				<div id="content">
+					<textarea class="chinese"></textarea>
+				</div>
 			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-				<form class="navbar-form navbar-right">
-					<div class="form-group">
-						<input type="text" placeholder="Email" class="form-control">
-					</div>
-					<div class="form-group">
-						<input type="password" placeholder="Password" class="form-control">
-					</div>
-					<button type="submit" class="btn btn-success">Sign in</button>
-				</form>
-			</div>
-			<!--/.navbar-collapse -->
 		</div>
 	</div>
-
-	<div class="jumbotron">
-		<div class="container">
-			<h1>English is power!</h1>
-			<p>越来越多中国留学生在欧洲或者美洲求学。但是英文水平是一个重要的技能，除了专业素质。
-				而且由于非母语交流，交流障碍妨碍着高质量论文水平。本网站提供英文翻译，英语修订，论文提升，论文书写指导。</p>
-			<p>
-				<a class="btn btn-primary btn-lg">Learn more &raquo;</a>
-			</p>
-		</div>
+	<div class="footer">
+		<p>Copyright (c) 2014</p>
 	</div>
 
-	<div class="container">
-		<div class="page-header">
-			<h1>优势</h1>
-			<p>中文交流</p>
-			<p>博士直接指导</p>
-			<p>免费再修订</p>
-		</div>
-
-		<footer>
-			<p>&copy; liuy97 (QQ: 41785264)</p>
-		</footer>
-
-	</div>
+	<script type="text/javascript">
+	jQuery.support.cors = true;
+    $(document).ready(function(){
+        $("textarea.chinese").chinesePinyinInput();
+	});
+    </script>
 
 </body>
 </html>
