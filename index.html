@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Chinese Pinyin Input</title>
-<meta name="description" content="Chinese Pinyin Input" />
-<meta name="keywords"
-	content="Chinese, Mandarin, pinyin, input, input method" />
+    <title>Chinese Pinyin Input</title>
+    <meta name="description" content="Chinese Pinyin Input" />
+    <meta name="keywords" content="Chinese, Mandarin, pinyin, input, input method" />
 
-<meta name="http-equiv" content="Content-type: text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="stylesheets/base.css" />
-<link rel="stylesheet" type="text/css"
-	href="stylesheets/chineseinput.css" />
-<script type="text/javascript"
-	src="http://code.jquery.com/jquery-1.10.2.js"></script>
-<script type="text/javascript"
-	src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-
-<script type="text/javascript" src="javascripts/chineseinput-min.js"></script>
+    <meta name="http-equiv" content="Content-type: text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="build/chineseinput/base.css" />
+	<link rel="stylesheet" type="text/css" href="build/chineseinput/chineseinput.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    
+    <script type="text/javascript" src="build/chineseinput/chineseinput-min.js"></script>
 </head>
-<body>
-	<div class="wrapper">
-		<div id="container">
-			<nav id="main" class="constrain clearfix">
-				<div class="menu-top-container">
-					<ul id="menu-top" class="menu l_tinynav2">
-						<li class="menu-item"><a href="#">Home</a></li>
-					</ul>
-				</div>
-			</nav>
-
-			<div id="content-wrapper" class="clearfix constrain ">
-				<div id="content">
-					<textarea class="chinese"></textarea>
-				</div>
+<body >
+<div class="wrapper">
+    <div id="container">
+		<nav id="main" class="constrain clearfix">
+			<div class="menu-top-container">
+				<ul id="menu-top" class="menu l_tinynav2">
+				<li class="menu-item"><a href="#">Home</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<div id="content-wrapper" class="clearfix constrain ">
+			<div id="content">
+				<textarea class="chinese" ></textarea>
 			</div>
 		</div>
 	</div>
-	<div class="footer">
-		<p>Copyright (c) 2014</p>
-	</div>
+</div>
+<div class="footer">
+<div class="help">
+	<p>space:choose current Chinese, num 1~5: choose Chinese, pageup:last page, pagedown:next page, enter:input pinyin</p>
+</div>
+    <p>Copyright (c) 2014</p>
+</div>
 
-	<script type="text/javascript">
+    <script type="text/javascript">
 	jQuery.support.cors = true;
     $(document).ready(function(){
         $("textarea.chinese").chinesePinyinInput();
+		$("textarea.chinese").focus();
 	});
     </script>
 

@@ -18,11 +18,11 @@ body {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -44px; /* the bottom margin is the negative value of the footer's height */
+    margin: 0 auto -48px; /* the bottom margin is the negative value of the footer's height */
 }
 
 .footer, .push {
-    height: 42px; /* .push must be the same height as .footer */
+    height: 46px; /* .push must be the same height as .footer */
 }
 
 #container, 
@@ -132,4 +132,9 @@ nav#main .searchform {
 	border: 1px solid rgba(0,0,0,0.25);
 	color: #fff;
 	text-shadow: rgba(0, 0, 0, 0.796875) 0px -1px 0px, rgba(255, 255, 255, 0.296875) 0px 0px 10px;
+}
+
+.help {
+	background: lightgrey;
+	margin:1px;
 }
