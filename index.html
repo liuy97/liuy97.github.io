@@ -1,50 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Chinese Pinyin Input</title>
-    <meta name="description" content="Chinese Pinyin Input" />
-    <meta name="keywords" content="Chinese, Mandarin, pinyin, input, input method" />
-
-    <meta name="http-equiv" content="Content-type: text/html; charset=UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/base.css" />
-	<link rel="stylesheet" type="text/css" href="stylesheets/chineseinput.css" />
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-    
-    <script type="text/javascript" src="javascripts/chineseinput-min.js"></script>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>qddt-client</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/all.css?1467721607031">
+  <!-- endinject -->
 </head>
-<body >
-<div class="wrapper">
-    <div id="container">
-		<nav id="main" class="constrain clearfix">
-			<div class="menu-top-container">
-				<ul id="menu-top" class="menu l_tinynav2">
-				<li class="menu-item"><a href="#">Home</a></li>
-				</ul>
-			</div>
-		</nav>
-		
-		<div id="content-wrapper" class="clearfix constrain ">
-			<div id="content">
-				<textarea class="chinese" ></textarea>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="footer">
-<div class="help">
-	<p>space:choose current Chinese, num 1~5: choose Chinese, pageup:last page, pagedown:next page, enter:input pinyin</p>
-</div>
-    <p>Copyright (c) 2014</p>
-</div>
+<body>
 
-    <script type="text/javascript">
-	jQuery.support.cors = true;
-    $(document).ready(function(){
-        $("textarea.chinese").chinesePinyinInput();
-		$("textarea.chinese").focus();
-	});
-    </script>
+  <app>Loading...</app>
+
+
+  <script>
+    // function.name (all IE)
+    // Remove once https://github.com/angular/angular/issues/6501 is fixed.
+    /*! @source http://stackoverflow.com/questions/6903762/function-name-not-supported-in-ie*/
+    if (!Object.hasOwnProperty('name')) {
+      Object.defineProperty(Function.prototype, 'name', {
+        get: function() {
+          var matches = this.toString().match(/^\s*function\s*((?![0-9])[a-zA-Z0-9_$]*)\s*\(/);
+          var name = matches && matches.length > 1 ? matches[1] : "";
+          // For better performance only parse once, and then cache the
+          // result through a new accessor for repeated access.
+          Object.defineProperty(this, 'name', {value: name});
+          return name;
+        }
+      });
+    }
+  </script>
+
+  <script>
+    // Fixes undefined module function in SystemJS bundle
+    function module() {}
+  </script>
+
+  <!-- shims:js -->
+  <!-- endinject -->
+
+  
+
+  <!-- libs:js -->
+  <!-- endinject -->
+
+  <!-- inject:js -->
+  <script src="js/shims.js?1467721607029"></script>
+  <script src="js/app.js?1467721607030"></script>
+  <!-- endinject -->
+
+  
 
 </body>
 </html>
