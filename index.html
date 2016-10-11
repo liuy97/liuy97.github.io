@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <base href="/">
+  <base href="/qddt-client/">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>qddt-client</title>
@@ -9,35 +9,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- inject:css -->
-  <link rel="stylesheet" href="css/all.css?1475233974556">
+  <link rel="stylesheet" href="/qddt-client/css/main.css?1476110072001">
   <!-- endinject -->
 </head>
 <body>
 
   <app>Loading...</app>
 
-
   <script>
-    // function.name (all IE)
-    // Remove once https://github.com/angular/angular/issues/6501 is fixed.
-    /*! @source http://stackoverflow.com/questions/6903762/function-name-not-supported-in-ie*/
-    if (!Object.hasOwnProperty('name')) {
-      Object.defineProperty(Function.prototype, 'name', {
-        get: function() {
-          var matches = this.toString().match(/^\s*function\s*((?![0-9])[a-zA-Z0-9_$]*)\s*\(/);
-          var name = matches && matches.length > 1 ? matches[1] : "";
-          // For better performance only parse once, and then cache the
-          // result through a new accessor for repeated access.
-          Object.defineProperty(this, 'name', {value: name});
-          return name;
-        }
-      });
-    }
-  </script>
-
-  <script>
-    // Fixes undefined module function in SystemJS bundle
-    function module() {}
+  // Fixes undefined module function in SystemJS bundle
+  function module() {}
   </script>
 
   <!-- shims:js -->
@@ -49,8 +30,8 @@
   <!-- endinject -->
 
   <!-- inject:js -->
-  <script src="js/shims.js?1475233974554"></script>
-  <script src="js/app.js?1475233974555"></script>
+  <script src="/qddt-client/js/shims.js?1476110071998"></script>
+  <script src="/qddt-client/js/app.js?1476110071999"></script>
   <!-- endinject -->
 
   
